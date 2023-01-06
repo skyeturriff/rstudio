@@ -275,10 +275,7 @@ try {
                 container = pullBuildPush(image_name: 'jenkins/ide', dockerfile: "docker/jenkins/Dockerfile.versioning", image_tag: "rstudio-versioning", build_args: jenkins_user_build_args('amd64'), retry_image_pull: 5)
                 container.inside() {
                     stage('bump version') {
-                        def rstudioVersion = sh (
-                          script: "docker/jenkins/rstudio-version.sh bump ${params.RSTUDIO_VERSION_PATCH}",
-                          returnStdout: true
-                        ).trim()
+                        def rstudioVersion = '2023.03.0-daily+1'
                         echo "RStudio build version: ${rstudioVersion}"
                         script {
                             currentBuild.displayName = "${rstudioVersion}"
