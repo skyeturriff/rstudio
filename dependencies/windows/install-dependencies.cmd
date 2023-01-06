@@ -231,14 +231,14 @@ if not exist %YARN_DIR%\yarn (
   call %NODE_SUBDIR%\npm install --global yarn
 )
 
-if not defined JENKINS_URL (
-  if exist C:\Windows\py.exe (
-    pushd ..\..\src\gwt\tools\i18n-helpers\
-    py -3 -m venv VENV
-    VENV\Scripts\pip install --disable-pip-version-check -r commands.cmd.xml\requirements.txt
-    popd
-  )
-)
+@REM if not defined JENKINS_URL (
+@REM   if exist C:\Windows\py.exe (
+@REM     pushd ..\..\src\gwt\tools\i18n-helpers\
+@REM     py -3 -m venv VENV
+@REM     VENV\Scripts\pip install --disable-pip-version-check -r commands.cmd.xml\requirements.txt
+@REM     popd
+@REM   )
+@REM )
 
 cd
 echo "Installing panmirror (visual editor)"
