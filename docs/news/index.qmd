@@ -9,6 +9,28 @@ format:
 
 This page provides the release notes associated with each release of RStudio and Posit Workbench. Please contact customer support (<a href="mailto:support@posit.co">support@posit.co</a>) for questions about the described changes.
 
+## 2025.09.2 {#rstudio-2025.09.2}
+
+| **"Cucumberleaf Sunflower"** | Date: 2025-10-29
+
+### New
+
+#### Posit Workbench
+
+### Fixed
+
+#### RStudio
+- ([#16495](https://github.com/rstudio/rstudio/issues/16495)): Fixed issue with high GPU/CPU utilization on macOS Tahoe
+- ([#16532](https://github.com/rstudio/rstudio/issues/16352)): Fixed an issue where ongoing R Markdown render output was lost when after a browser refresh
+- (rstudio-pro#6377): Extend CSRF protection to the export endpoint
+
+#### Posit Workbench
+
+### Dependencies
+- ([#16492](https://github.com/rstudio/rstudio/issues/16492)): Copilot Language Server 1.381.0
+- ([#16495](https://github.com/rstudio/rstudio/issues/16495)): Electron 37.6.1
+
+
 
 ## 2025.09.1 {#rstudio-2025.09.1}
 
